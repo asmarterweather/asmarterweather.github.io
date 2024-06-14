@@ -1,20 +1,12 @@
 [
     {
-      "Equation": "2x + 5 = 15",
-      "Answer": "x = 5",
-      "Level": "easx",
-      "date": "2024-06-14"
+        "Equation": "2x + 5 = 15",
+        "Answer": "x = 5",
+        "date": "2024-06-14"
     },
     {
-      "Equation": "3(x - 4) = 21",
-      "Answer": "x = 9",
-      "Level": "easx",
-      "date": "2024-06-15"
-    },
-    {
-      "Equation": "4x + 2 = 10",
-      "Answer": "x = 2",
-      "Level": "easx",
-      "date": "2024-06-16"
-    },
+        "Equation": "3(x - 4) = 21",
+        "Answer": "x = 9",
+        "date": "2024-06-15"
+    }
 ]
