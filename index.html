@@ -72,25 +72,43 @@
     <body2>
         <h1>Maths Question of the Day</h1>
     <script>
-    async function fetchQuestion() {
-      const response = await fetch('questions.json');
-      const questions = await response.json();
-      const today = new Date().toISOString().split('T')[0];
-      const question = questions.find(q => q.date === today);
+   document.addEventListener("DOMContentLoaded", function() {
+    const messageForm = document.getElementById('answer-form');
+    const messageInput = document.getElementById('answer');
+    const resultContainer = document.getElementById('result');
+    const equationContainer = document.getElementById('equation');
+    const correctAnswerInput = document.getElementById('correct_answer');
 
-      if (question) {
-        document.getElementById('equation').innerText = question.Equation;
-        document.getElementById('answer').innerText = `Answer: ${question.Answer}`;
-      } else {
-        document.getElementById('equation').innerText = 'No question for today!';
-      }
-    }
+    // Fetch questions from the JSON file
+    fetch("questions.json")
+        .then(response => response.json())
+        .then(questionsData => {
+            const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+            const todaysQuestion = questionsData.find(question => question.date === today);
 
-    function showAnswer() {
-      document.getElementById('answer').style.display = 'block';
-    }
+            if (todaysQuestion) {
+                equationContainer.textContent = todaysQuestion.Equation;
+                correctAnswerInput.value = todaysQuestion.Answer;
+            } else {
+                equationContainer.textContent = "No question for today!";
+            }
+        })
+        .catch(error => {
+            console.error("Error loading questions:", error);
+        });
 
-    fetchQuestion();
+    messageForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const userAnswer = messageInput.value.trim();
+        const correctAnswer = correctAnswerInput.value.trim();
+
+        if (userAnswer === correctAnswer) {
+            resultContainer.textContent = "Correct!";
+        } else {
+            resultContainer.textContent = "Incorrect. Try again!";
+        }
+    });
+});
         </script>
         <h5><span id="equation"></span></p>
         <form id="answer-form">
