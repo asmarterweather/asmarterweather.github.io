@@ -73,15 +73,23 @@
         <h1>Maths Question of the Day</h1>
     <script>
     // Fetch questions from the JSON file
+    document.addEventListener("DOMContentLoaded", function() {
+    const equationContainer = document.getElementById("equation");
+    const correctAnswerInput = document.getElementById("correct_answer");
+    const messageForm = document.getElementById("answer-form");
+    const messageInput = document.getElementById("answer");
+    const resultContainer = document.getElementById("result");
+
+    // Load questions from the JSON file
     fetch("questions.json")
         .then(response => response.json())
         .then(questionsData => {
             const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
-            const todaysQuestion = questionsData.find(Equation => Equation.date === today);
+            const todaysQuestion = questionsData.find(question => question.date === today);
 
             if (todaysQuestion) {
                 equationContainer.textContent = todaysQuestion.Equation;
-                correctAnswerInput.value = todaysQuestion.Answer;
+                correctAnswerInput.value = todaysQuestion.Answer.trim(); // Trim to avoid whitespace issues
             } else {
                 equationContainer.textContent = "No question for today!";
             }
@@ -90,6 +98,7 @@
             console.error("Error loading questions:", error);
         });
 
+    // Handle form submission
     messageForm.addEventListener('submit', function(event) {
         event.preventDefault();
         const userAnswer = messageInput.value.trim();
@@ -101,6 +110,7 @@
             resultContainer.textContent = "Incorrect. Try again!";
         }
     });
+});
 
         </script>
         <h5><span id="equation"></span></p>
