@@ -113,8 +113,8 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("questions.json")
         .then(response => response.json())
         .then(questionsData => {
-            const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
-            const todaysQuestion = questionsData.find(question => question.date === today);
+            var today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+            var todaysQuestion = questionsData.find(question => question.date === today);
 
             if (todaysQuestion) {
                 equationContainer.textContent = todaysQuestion.Equation;
