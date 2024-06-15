@@ -71,15 +71,6 @@
     </head>
     <body2>
         <h1>Maths Question of the Day</h1>
-       
-        <h5><span id="equation"></span></p>
-        <form id="answer-form">
-            <label for="answer"></label>
-            <input type="text" id="answer" name="answer" value="x = " class="answer">
-            <input type="hidden" id="correct_answer">
-            <button class="btn">Check Answer</button>
-        </form>
-        <p id="result" class="result"></p>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
     const messageForm = document.getElementById('answer-form');
@@ -120,5 +111,14 @@
 });
 
         </script>
+        <h5><span id="equation"></span></p>
+        <form id="answer-form">
+            <label for="answer"></label>
+            <input type="text" id="answer" name="answer" value="x = " class="answer">
+            <input type="hidden" id="correct_answer">
+            <button class="btn">Check Answer</button>
+        </form>
+        <p id="result" class="result"></p>
+       
     </body2>
 </html>
