@@ -113,7 +113,12 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("questions.json")
         .then(response => response.json())
         .then(questionsData => {
-            const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+            var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '/' + dd + '/' + yyyy;
             const todaysQuestion = questionsData.find(question => question.date === today);
 
             if (todaysQuestion) {
