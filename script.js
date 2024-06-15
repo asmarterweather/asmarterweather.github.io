@@ -109,6 +109,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const equationContainer = document.getElementById('equation');
     const correctAnswerInput = document.getElementById('correct_answer');
 
+    document.addEventListener("DOMContentLoaded", function() {
+    const messageForm = document.getElementById('answer-form');
+    const messageInput = document.getElementById('answer');
+    const resultContainer = document.getElementById('result');
+    const equationContainer = document.getElementById('equation');
+    const correctAnswerInput = document.getElementById('correct_answer');
+
     // Fetch questions from the JSON file
     fetch("questions.json")
         .then(response => response.json())
