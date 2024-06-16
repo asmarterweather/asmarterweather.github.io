@@ -18,24 +18,28 @@
       "date": "2024-06-16"
     },
     {
-      "Equation": "2x - 3 = 7",
-      "Answer": "x = 5",
+      "Equation": "10(5(4x+3)) = 100x+7",
+      "Answer": "x = -1.43",
       "Level": "easx"
+        "date": "2024-06-17"
     },
     {
       "Equation": "5 + 3x = 20",
       "Answer": "x = 5",
       "Level": "easx"
+        "date": "2024-06-18"
     },
     {
       "Equation": "2(x + 3) = 10",
       "Answer": "x = 2",
       "Level": "easx"
+        "date": "2024-06-19"
     },
     {
       "Equation": "3x - 7 = 8",
       "Answer": "x = 5",
       "Level": "easx"
+        "date": "2024-06-20"
     },
     {
       "Equation": "4x + 5 = 13",
