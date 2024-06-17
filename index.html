@@ -10,7 +10,7 @@
             const response = await fetch('questions.json');
             const questions = await response.json();
            
-            const today = "2024-06-17"
+            const today = new Date().toISOString().split('T')[0];
             const question = questions.find(q => q.date === today);
 
             if (question) {
