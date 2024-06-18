@@ -28,5 +28,11 @@
       "Answer": "x = -0.78",
       "Level": "easx",
       "date": "2024-06-18"
+    },
+      {
+      "Equation": "6x * 2 + 18x/3 + 3 = 2x + 35",
+      "Answer": "x = 2",
+      "Level": "easx",
+      "date": "2024-06-19"
     }
 ]
