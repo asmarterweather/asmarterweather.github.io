@@ -40,5 +40,11 @@
       "Answer": "x = 1.5",
       "Level": "easx",
       "date": "2024-06-20"
+    },
+    {
+      "Equation": "10(2x + 4(2x + 3)) + 6x = 2(2x + 50) + 2(x + 60)",
+      "Answer": "x = 1",
+      "Level": "easx",
+      "date": "2024-06-21"
     }
 ]
