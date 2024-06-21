@@ -46,5 +46,11 @@
       "Answer": "x = 1",
       "Level": "easx",
       "date": "2024-06-21"
+    },
+    {
+      "Equation": "10x + 2(5x + 2) = 84",
+      "Answer": "x = 4",
+      "Level": "easx",
+      "date": "2024-06-22"
     }
 ]
