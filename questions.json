@@ -52,5 +52,11 @@
       "Answer": "x = 4",
       "Level": "easx",
       "date": "2024-06-22"
+    },
+    {
+      "Equation": "2(x + 5(2x + 6)) = 2x + 120",
+      "Answer": "x = 3",
+      "Level": "easx",
+      "date": "2024-06-23"
     }
 ]
