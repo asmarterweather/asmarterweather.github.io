@@ -58,5 +58,11 @@
       "Answer": "x = 3",
       "Level": "easx",
       "date": "2024-06-23"
+    },
+    {
+      "Equation": "7(2x + 7(3x + 5)) = x + 5(12x + 59)",
+      "Answer": "x = 0.5",
+      "Level": "easx",
+      "date": "2024-06-23"
     }
 ]
