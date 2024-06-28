@@ -76,6 +76,19 @@
       "Answer": "x = 0.69",
       "Level": "easx",
       "date": "2024-06-27"
+    },
+    {
+      "Equation": "2(4x + 5(6x + 4)) = 2(29x + 40)",
+      "Answer": "x = 4",
+      "Level": "easx",
+      "date": "2024-06-28"
+    },
+    {
+      "Equation": "",
+      "Answer": "x = 4",
+      "Level": "easx",
+      "date": "2024-06-29"
     }
+    
     
 ]
